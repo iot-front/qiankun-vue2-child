@@ -1,0 +1,88 @@
+@mixin text-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@mixin line-clamp($line) {
+	word-break: break-all;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $line;
+}
+@mixin border-color($color, $darkColor) {
+  border-color: $color;
+  [data-theme="dark"] & {
+    border-color: $darkColor;
+  }
+}
+@mixin font-color($color, $darkColor) {
+  color: $color;
+  [data-theme="dark"] & {
+    color: $darkColor;
+  }
+}
+@mixin bg-color($color, $darkColor) {
+  background-color: $color;
+  [data-theme="dark"] & {
+    background-color: $darkColor;
+  }
+}
+$font-color: #1B1C21; //默认字体颜色
+$active-color: #0074d9;
+$header-height: 50px; //默认顶部padding,用于是否有header部分
+$border-color: #e4e7ed; //border颜色-浅
+// dss
+// color
+$primary-color: #2d8cf0;
+$info-color: #2db7f5;
+$success-color: #19be6b;
+$processing-color: $primary-color;
+$warning-color: #ff9900;
+$error-color: #ed4014;
+$normal-color: #e6ebf1;
+$link-color: #2D8cF0;
+$link-hover-color: mix(#ffffff, $link-color, 20%);
+$link-active-color: mix(#000000, $link-color, 5%);
+$selected-color: rgba($primary-color, 90%);
+$tooltip-color: #fff;
+$subsidiary-color: #808695;
+$rate-star-color: #f5a623;
+$pink-color: rgba(243, 133, 243, 0.753);
+$yellow-color: #f4cf2a;
+// Base
+$body-background: #fff;
+$font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+$code-family: Consolas,Menlo,Courier,monospace;
+$title-color: #17233d;
+$text-color: #515a6e;
+$font-size-base: 14px;
+$font-size-small: 12px;
+$font-size-large: 16px;
+$line-height-base: 1.5;
+$line-height-computed: floor(($font-size-base * $line-height-base));
+$border-radius-base: 6px;
+$border-radius-small: 4px;
+$border-radius-large: 8px;
+$cursor-disabled: not-allowed;
+// Shadow
+$shadow-color: rgba(0, 0, 0, .2);
+$shadow-base: -1px 0 6px $shadow-color;
+$shadow-card: 0 1px 1px 0 rgba(0,0,0,.1);
+$shadow-up: 0 -1px 6px $shadow-color;
+$shadow-down: 0 1px 6px $shadow-color;
+$shadow-left: -1px 0 6px $shadow-color;
+$shadow-right: 1px 0 6px $shadow-color;
+$shadow-inset: inset 0 0 5px $shadow-color;
+
+$dark-primary-color: #4B8FF3;
+$border-color-base: #DEE4EC;
+$dark-border-color-base: rgba(255,255,255,0.20);
+$text-title-color: rgba(0, 0, 0, 0.85);
+$light-text-color: rgba(0,0,0,0.65);
+$dark-text-color: rgba(255,255,255,0.65);
+$light-base-color: $body-background; // #FFFFFF
+$dark-base-color: #1E232D;
+$background-color-white: #fff;
+$background-color-base: #f7f7f7;
