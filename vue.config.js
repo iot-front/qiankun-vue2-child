@@ -1,10 +1,6 @@
 const path = require('path')
 const { name } = require('./package');
-// const prodUrl = 'http://10.205.51.20:8088' // 生产
-// const prodUrl = 'http://data.haier.net'
 const CompressionPlugin = require('compression-webpack-plugin')
-const testUrl = 'http://10.205.241.37:8088' // 验收
-const targetUrl = testUrl
 function resolve(dir) {
   return path.join(__dirname, dir)
 }

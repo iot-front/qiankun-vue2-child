@@ -3,6 +3,13 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import '@/components/base/svgIcon/index.js'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI)
+import Components from 'haier-ui'
+import 'haier-ui/lib/haier-ui.css'
+Vue.use(Components)
+
 Vue.config.productionTip = false;
 Vue.prototype.$store = store;
 // qiankun

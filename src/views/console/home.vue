@@ -1,6 +1,6 @@
 <template>
 	<div>
-    离线开发页面-待开发
+		<h-module-title title="页面-待开发" ></h-module-title>
   </div>
 </template>
 
