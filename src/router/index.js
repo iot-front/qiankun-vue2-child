@@ -18,8 +18,8 @@ const router = new VueRouter({
 	routes: [
 		{
 			path: '/childOffline/task',
-			component: () => import(/* webpackChunkName: "console" */ '@/views/console/home.vue'),
-			name: 'consoleHome',
+			component: () => import(/* webpackChunkName: "task" */ '@/views/task/index.vue'),
+			name: 'taskIndex',
 			meta: {
 				keepAlive: false,
 			}
