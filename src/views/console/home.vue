@@ -5,7 +5,7 @@
 </template>
 
 <script>
-// import { apiTest1, apiTest2 } from '@/apis/console';
+import { apiSearchIndustryDesc } from '@/apis/console';
 export default {
 	data() {
 		return {
@@ -14,8 +14,9 @@ export default {
 	},
 	created() {
     // // 测试接口
-    // apiTest1().then(() => {})
-    // apiTest2().then(() => {})
+    apiSearchIndustryDesc().then((res) => {
+			console.log(res)
+		})
 		
 	},
   mounted() {

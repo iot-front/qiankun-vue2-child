@@ -44,6 +44,8 @@ export async function bootstrap() {
  */
 export async function mount(props) {
   Vue.prototype.$mainStore = props.mainStore || {};
+  store.commit('setPageType', props.pageType || '');
+  store.commit('setBaseDataUrl', props.baseDataUrl || '');
   render(props)
 }
 /**

@@ -17,7 +17,7 @@ const router = new VueRouter({
 	mode: 'hash',
 	routes: [
 		{
-			path: '/childOffline/console/home',
+			path: '/childOffline/task',
 			component: () => import(/* webpackChunkName: "console" */ '@/views/console/home.vue'),
 			name: 'consoleHome',
 			meta: {
