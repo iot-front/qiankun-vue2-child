@@ -1,5 +1,4 @@
 import store from '../store';
-import router2 from '../router';
 /**
  * @description: 
  * @param {method} method 请求方式
@@ -13,13 +12,4 @@ export const afRequest = (method, path, params, headers, other, basepath=store.s
     hgLoginCode: '10401',
     ...params
   }, headers, other, basepath)
-}
-let router = null;
-if (store.state.pageType === 'HAIER_DATA') {
-  router = window.fnqkDssRouter
-} else {
-  router = router2
-}
-export {
-  router
 }
